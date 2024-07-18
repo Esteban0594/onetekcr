@@ -1,0 +1,144 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Color de fondo */
+}
+
+header {
+    background-color: #007BFF; /* Color de fondo del encabezado */
+    color: white; /* Color de texto */
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+/* Secciones */
+.section {
+    padding: 30px;
+    text-align: center;
+    background-color: #ffffff; /* Color de fondo de las secciones */
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    max-width: 800px; /* Ancho máximo para las secciones */
+    display: none; /* Ocultar todas las secciones por defecto */
+}
+
+.section.active {
+    display: block; /* Mostrar la sección activa */
+}
+
+.section h2 {
+    color: #333333; /* Color de título */
+    margin-bottom: 20px;
+}
+
+.section p {
+    color: #666666; /* Color de texto */
+}
+
+/* Estilos para el botón "Leer Más" */
+.section .button {
+    display: inline-block;
+    padding: 8px 16px; /* Reducimos el padding para hacer el botón más pequeño */
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.section .button:hover {
+    background-color: #0056b3;
+}
+
+/* Ajuste para textos largos */
+.section .vision p,
+.section .mission p {
+    max-height: 3em; /* Máxima altura inicial de 3 líneas */
+    overflow: hidden;
+}
+
+.section .vision.open p,
+.section .mission.open p {
+    max-height: none; /* Mostrar todo el texto si se expande */
+}
+
+
+.back-to-top {
+    position: absolute;
+    bottom: 53px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #007BFF; /* Color de fondo del pie de página */
+    color: white; /* Color de texto del pie de página */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .section {
+        padding: 30px;
+    }
+}
+
+
+
